@@ -1,0 +1,176 @@
+body {
+  font-family: cursive, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(images/pexels-lisa-1107717.jpg);
+  background-size: cover;
+  background-position: center;
+  /* grid-template-columns:  */
+  color: #fafaf9;
+  grid-gap: 1em;
+  font-size: 20px;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+}
+
+/* Contant */
+
+#app .contant {
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  margin: 70px auto;
+  text-align: center;
+}
+#app .logo {
+  position: absolute;
+  top: -30px;
+  right: 200px;
+  background-color: #a76542;
+  width: 70px;
+  height: 70px;
+  line-height: 60px;
+  border-radius: 50%;
+  font-size: 30px;
+  font-family: "Oswald";
+}
+#app .holder {
+  width: 100%;
+}
+
+#app .entry {
+  background: rgba(59, 74, 107, 0.4);
+}
+#city {
+  font-family: -webkit-pictograph;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffd33b;
+}
+
+#app #date,
+#app #content {
+  margin: 1px auto;
+}
+
+#app #temp {
+  font-family: -webkit-body;
+  font-size: 23px;
+  line-height: 30px;
+}
+
+#app .headline {
+  margin-top: 45px;
+  margin-bottom: 15px;
+  font-size: 33px;
+}
+#app .title {
+  margin-top: 10px;
+}
+.footer {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+.footer a {
+  color: #fff;
+  font-size: 14px;
+}
+/*  Basic Styling To Override Default For Basic HTML Elements */
+#app label {
+  display: block;
+  font-size: 17px;
+  text-align: left;
+  padding-left: 10px;
+  margin-top: 5px;
+}
+
+#app input[type="text"] {
+  width: 94%;
+  height: 40px;
+}
+
+#app input[type="text"],
+#app textarea {
+  font-size: 17px;
+  border: none;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+}
+#app button {
+  display: block;
+  margin: auto;
+  font-size: 26px;
+  font-family: "Oswald", sans-serif;
+  border: none;
+  box-shadow: 2px 4px 5px #444;
+  cursor: pointer;
+  background-color: #a76542;
+  text-align: center;
+  padding: 0 15px;
+  border-radius: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+#app button span {
+  background-color: rgba(100, 50, 11, 0.281);
+  height: 100%;
+  width: 0%;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  transition: 0.5s;
+}
+
+#app button:hover span {
+  width: 100%;
+}
+
+#app button:hover {
+  border: none;
+}
+h1 {
+  font-size: 36px;
+}
+textarea {
+  font-family: cursive, sans-serif;
+  width: 95%;
+  margin-top: 5px;
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder {
+  /* Firefox, Chrome, Opera */
+  color: #777;
+  font-family: cursive, sans-serif;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #777;
+  font-family: cursive, sans-serif;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #777;
+  font-family: cursive, sans-serif;
+}
